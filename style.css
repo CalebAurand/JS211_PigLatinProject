@@ -1,0 +1,41 @@
+:root {
+    --gradient: linear-gradient(
+    45deg,
+    #845ec2,
+    #d65db1,
+    #ff6f91,
+    #ff9671,
+    #ffc75f,
+    #f9f871
+    );
+  }
+  
+  body {
+    font-family: basic-sans, sans-serif;
+    min-height: 100vh;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.2;
+    line-width: 1.2;
+    color: #333;
+    background: #ddd;
+    background-image: var(--gradient);
+    background-size: 400%;
+    animation: bg-animation 5s infinite alternate;
+    
+  }
+  
+  h1{
+    height: 13vh;
+    width: 100%;
+    display: block;
+    font-size: 24pt;
+    margin: auto;
+    padding-left: 35%;
+  }
+  
+  @keyframes bg-animation {
+    0% {background-position: left}
+    100% {background-position: right}
+  }
